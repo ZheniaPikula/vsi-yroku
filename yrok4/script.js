@@ -64,7 +64,7 @@ let appData = {
     chooseIncome: function(){
         let items = prompt("Що принесе додатковий дохід?(через кому)", "");
         
-        if (typeof(items) != "sting" || items == "" || typeof(items) == null) {
+        if (typeof(items) != "string" || items == "" || typeof(items) == null) {
             console.log("Ви ввели некоректні дані");
         } else { 
             appData.income = items.split(", ");
@@ -78,7 +78,7 @@ let appData = {
     }
 };
 for (let key in appData){
-    console.log("ця програма вміщує в себе дані"+ key+ " - " +appData[key]);
+    console.log("ця програма вміщує в себе дані: " + key + " - " + appData[key]);
 }
 
 
